@@ -3,7 +3,7 @@
 #SBATCH --job-name=BurkPx
 ##SBATCH --output=
 ##SBATCH --array=1-4
-#SBATCH --time=72:00:00
+#SBATCH --time=96:00:00
 #SBATCH --cpus-per-task=24
 #SBATCH --mem=5000
 
@@ -15,4 +15,4 @@ export MKL_NUM_THREADS=1
 export OMP_NUM_THREADS=1
 export OPENBLAS_NUM_THREADS=1
 
-srun python ModelTuning.py -p Predictor_IgGMall_PosNeg_interact.txt -r Response.txt -k 250 -a roc_auc -o Results
+srun python ModelTuning.py -p Predictor_IgGMall_PosNeg_interact.txt -r Response.txt -k 75 -a roc_auc -o Results

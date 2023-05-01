@@ -67,6 +67,10 @@ def OverSampler(parentDIR,df, xfilename, yfilename):
 df = pd.read_csv(options.file, sep='\t', index_col=0)
 df.dropna(inplace=True)
 Y = df.Status.copy()
+
+## dropping columns 'index', 'PatientID', 'SerumID', 'TimeGroup', 'Status', 'Type', 'Rep'
+## Should use the below instead of iloc for increased transparency.
+# X=df.drop(['index', 'PatientID', 'SerumID', 'TimeGroup', 'Status', 'Type', 'Rep'], axis=1)
 X = df.iloc[:,7:].copy()
 
 Y.replace('Melioid', 1, inplace=True)
