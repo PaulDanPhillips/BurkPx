@@ -1,4 +1,0 @@
-W1_response.txt
-W2_response.txt
-W3_response.txt
-W4_response.txt

@@ -1,4 +1,0 @@
-Week1_IgGM_PosNeg_grouped.txt
-Week2_IgGM_PosNeg_grouped.txt
-Week3_IgGM_PosNeg_grouped.txt
-Week4_IgGM_PosNeg_grouped.txt
